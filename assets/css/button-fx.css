@@ -1,0 +1,64 @@
+.button-fx:before {
+  /*content:"Ivan";*/
+}
+
+.button-fx {
+  position:relative;
+  overflow:hidden;
+  padding:16px 32px;
+  margin-top:15px;
+  min-width:200px;
+  min-height:50px;
+  border:none;
+  border-radius:0px;
+  opacity:.9;
+  font-weight:bold;
+  background-color:rgba(4,154,49,0.8) !important;
+  text-transform:uppercase;
+  font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,§-serif !important;
+}
+
+@media (max-width: 767px) {
+  .button-fx {
+    min-width:100px;
+    min-height:35px;
+    padding:8px 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .button-fx:hover:before {
+    --size:250px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .button-fx:hover:before {
+    --size:150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .button-fx:before {
+    --size:0px;
+    content:"";
+    position:absolute !important;
+    left:var(--x);
+    top:var(--y);
+    width:var(--size);
+    height:var(--size);
+    /*background:-webkit-radial-gradient(circle closest-side, #049a31, transparent);*/
+    /*background:radial-gradient(circle closest-side, #049a31, transparent);*/
+    /*background:-webkit-radial-gradient(circle closest-side, #00ffff, transparent);*/
+    /*background:radial-gradient(circle closest-side, #00ffff, transparent);*/
+    background:-webkit-radial-gradient(circle closest-side, #07ff51, transparent);
+    background:radial-gradient(circle closest-side, #07ff51, transparent);
+    /*opacity:.8;*/
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    -webkit-transition:width .2s ease, height .2s ease;
+    transition:width .2s ease, height .2s ease;
+    z-index:-1;
+  }
+}
+

@@ -1,0 +1,127 @@
+#transmenu {
+  -moz-transition:background 0.6s ease;
+  -webkit-transition:background 0.6s ease;
+  transition:background 0.6s ease;
+}
+
+#transmenu.transparency {
+  background:rgba(0,0,0,0.2) !important;
+  box-shadow:none;
+  border-color:transparent !important;
+  text-shadow:0 0 2px rgba(0,0,0,0.8);
+}
+
+#transmenu .fa, #transmenu .icon {
+  color:#049a31;
+  opacity:.9;
+  margin-right:5px;
+  margin-left:5px;
+}
+
+#transmenu .navbar-brand {
+  -moz-transition:all 0.6s ease;
+  -webkit-transition:all 0.6s ease;
+  transition:all 0.6s ease;
+  color:#049a31 !important;
+  opacity:1;
+}
+
+#transmenu .navbar-brand strong {
+  color:#049a31 !important;
+  opacity:1;
+}
+
+#transmenu.transparency .navbar-brand {
+  /*padding-top:0.5rem;*/
+  /*padding-bottom:0.5rem;*/
+  color:#fff !important;
+  border:none;
+}
+
+#transmenu .nav-link:hover {
+  /*color:#049a31;*/
+  /*color:#ffffff;*/
+  color:#000000;
+  opacity:1;
+}
+
+#transmenu.transparency .nav-link:hover {
+  color:#049a31;
+  /*color:#ffffff;*/
+  opacity:1;
+}
+
+#transmenu.transparency .nav-link, #transmenu.transparency .nav-link.active, #transmenu.transparency .nav-link:focus {
+  color:#fff;
+  border:none;
+  opacity:0.7;
+}
+
+#transmenu .navbar-toggler {
+  position:relative;
+  height:35px;
+  margin-right:-.10rem;
+  border:none;
+  background-color:rgba(4,154,49,0.9);
+  /*box-shadow:0 0 2px rgba(0,0,0,0.8);*/
+}
+
+#transmenu.transparency .navbar-toggler {
+  box-shadow:0 0 2px rgba(0,0,0,0.8);
+}
+
+#transmenu .navbar-toggler:focus, #transmenu .navbar-toggler:active {
+  outline:0;
+}
+
+#transmenu .navbar-toggler span {
+  display:block;
+  background-color:#ffffff;
+  height:2px;
+  width:25px;
+  margin-top:4px;
+  margin-bottom:4px;
+  -webkit-transform:rotate(0deg);
+  -moz-transform:rotate(0deg);
+  transform:rotate(0deg);
+  position:relative;
+  left:0;
+  opacity:1;
+}
+
+#transmenu.transparency .navbar-toggler span {
+  background:#fff;
+}
+
+#transmenu .navbar-toggler span:nth-child(1), #transmenu .navbar-toggler span:nth-child(3) {
+  -webkit-transition:transform .35s ease-in-out;
+  -moz-transition:transform .35s ease-in-out;
+  transition:transform .35s ease-in-out;
+}
+
+#transmenu .navbar-toggler:not(.collapsed) span:nth-child(1) {
+  position:absolute;
+  left:12px;
+  top:12px;
+  -webkit-transform:rotate(135deg);
+  -moz-transform:rotate(135deg);
+  transform:rotate(135deg);
+  opacity:0.9;
+}
+
+#transmenu .navbar-toggler:not(.collapsed) span:nth-child(2) {
+  height:12px;
+  visibility:hidden;
+  background-color:transparent;
+}
+
+#transmenu .navbar-toggler:not(.collapsed) span:nth-child(3) {
+  position:absolute;
+  left:12px;
+  top:12px;
+  -webkit-transform:rotate(-135deg);
+  -moz-transform:rotate(-135deg);
+  transform:rotate(-135deg);
+  opacity:0.9;
+}
+

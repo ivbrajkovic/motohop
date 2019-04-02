@@ -1,0 +1,48 @@
+.test {
+  background-color:#00ffff;
+}
+
+.test2 {
+  background-color:red;
+  /*padding-top:18%;*/
+}
+
+.test3 {
+  background-color:magenta;
+}
+
+.test4 {
+  border:1px solid green;
+}
+
+.test-flex-container {
+  border:2px solid green;
+  height:50%;
+  margin-bottom:20px;
+}
+
+.test-flex-item {
+  border:1px dotted lightgrey;
+}
+
+.h450 {
+  width:100%;
+  height:450px;
+}
+
+.h450-2 {
+  width:100%;
+  height:450px;
+  position:absolute;
+  top:10px;
+  left:0;
+  background-color:#FFF;
+  box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.1);
+  padding-bottom:46px;
+}
+
+.h120-overflow {
+  height:120px;
+  overflow:hidden;
+}
+

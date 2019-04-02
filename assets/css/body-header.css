@@ -1,0 +1,38 @@
+.bottom-right {
+  position:absolute;
+  bottom:10%;
+  right:5%;
+  /*transform:translate(-75%, -75%);*/
+  visibility:hidden;
+  opacity:.9;
+}
+
+@media (min-width: 1281px) {
+  .bottom-right {
+    font-size:24px;
+    visibility:visible;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+  .bottom-right {
+    font-size:20px;
+    visibility:visible;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .bottom-right {
+    font-size:14px;
+    visibility:visible;
+  }
+}
+
+.bottom-right i {
+  display:block;
+  color:#049a31;
+  /*padding-right:10%;*/
+  text-align:right;
+  font-size:75%;
+}
+

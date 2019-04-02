@@ -1,0 +1,41 @@
+@media (max-width: 767px) {
+  #banner-1 {
+    display:none;
+  }
+}
+
+.polaroid {
+  border:1px solid #049a31;
+  position:relative;
+}
+
+.polaroid .image {
+  height:179px;
+  width:320px;
+  background-image:url(../../assets/img/banner/banner-opt-1.gif);
+  background-position:center;
+}
+
+.polaroid .footer {
+  background-color:#fff;
+  color:#818080;
+  padding:10px 20px;
+  text-align:center;
+}
+
+.banner {
+  top:40px;
+  z-index:999;
+  display:inline-block;
+  /*-webkit-box-flex:1;*/
+  /*-webkit-flex:1;*/
+  /*-moz-box-flex:1;*/
+  /*-ms-flex:1;*/
+  /*flex:1;*/
+  position:relative;
+  -webkit-transition:-webkit-transform .7s ease;
+  transition:-webkit-transform .7s ease;
+  transition:transform .7s ease;
+  transition:transform .7s ease, -webkit-transform .7s ease;
+}
+
